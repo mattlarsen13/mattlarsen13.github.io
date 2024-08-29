@@ -1,0 +1,46 @@
+/* Structure */
+body {
+    background-color: #adbbda;
+    font-family: 'Georgia', sans-serif;
+    text-align: center;
+}
+
+/* Heading styles */
+h1 {
+    color: #2C3E50;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #2C3E50;
+    font-size: 1.5em;
+}
+
+/* Paragraph styling */
+p {
+    color: #34495E;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Assignment list styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    color: #2980B9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #EDE8f5;
+}
+
