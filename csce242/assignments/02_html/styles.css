@@ -1,0 +1,75 @@
+/* Structure */
+body {
+    font-family: Georgia, sans-serif;
+    background: url(images/folsom.webp);
+    color: #09762b;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#main-content {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #006400;
+}
+
+/* Navigation */
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px;
+    background-color: #0c7b49; 
+    text-align: center;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.nav-links a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #0c7b49;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background-color: #136c35; 
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border: 2px solid #333;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #333;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: #006400;
+    color: white;
+}
