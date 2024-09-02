@@ -10,7 +10,14 @@ body {
 }
 
 #main-content {
-    
+    display: flex; 
+    justify-content: space-between; 
+    padding: 50px;
+}
+
+#main-content section {
+    flex: 1; 
+    margin: 0 10px; 
 }
 
 #main-footer {
@@ -28,6 +35,7 @@ body {
     width: 350px;
     height: 350px;
     text-align: center;
+    align-content: center;
 }
 
 #assignment2 {
@@ -36,6 +44,7 @@ body {
     width: 350px;
     height: 350px;
     text-align: center;
+    align-content: center;
 }
 
 #assignment3 {
@@ -44,6 +53,7 @@ body {
     width: 350px;
     height: 350px;
     text-align: center;
+    align-content: center;
 }
 
 a {
@@ -60,6 +70,8 @@ a:hover {
 @media only screen and (min-width: 600px) {
     .main-content {
         display:flex;
+        flex-direction: column;
+        align-items: center;
     }
     .one {
         flex:1;
