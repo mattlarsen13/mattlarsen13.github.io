@@ -1,44 +1,49 @@
 /* Structure */
 body {
     background-color: #adbbda;
-    font-family: 'Georgia', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-header {
+    color: #3D52A0;
     text-align: center;
 }
 
 #main-content {
-    width: 95%;
-    margin:auto;
-    background: #bbc7e2;
-    border-radius:5px;
+    
 }
 
-/* Heading styles */
-h1 {
+#main-footer {
     color: #3D52A0;
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    text-align: center;
 }
 
-h2 {
+#name {
     color: #3D52A0;
-    font-size: 1.5em;
 }
 
-/* Paragraph styling */
-p {
-    color: #7091E6;
-    font-size: 1.2em;
-    line-height: 1.5;
+#assignment1 {
+    color: #3D52A0;
+    background-color: #bbc7e2;
+    width: 350px;
+    height: 350px;
+    text-align: center;
 }
 
-/* Assignment list styling */
-ul {
-    list-style-type: none;
-    padding: 0;
+#assignment2 {
+    color: #3D52A0;
+    background-color: #bbc7e2;
+    width: 350px;
+    height: 350px;
+    text-align: center;
 }
 
-li {
-    margin: 10px 0;
+#assignment3 {
+    color: #3D52A0;
+    background-color: #bbc7e2;
+    width: 350px;
+    height: 350px;
+    text-align: center;
 }
 
 a {
@@ -49,5 +54,84 @@ a {
 
 a:hover {
     color: #EDE8f5;
+} 
+
+/* Apply to 600px and larger */
+@media only screen and (min-width: 600px) {
+    .main-content {
+        display:flex;
+    }
+    .one {
+        flex:1;
+    }
 }
+
+
+
+
+
+
+
+
+
+/* Structure 
+body {
+    background-color: #adbbda;
+    font-family: 'Georgia', sans-serif;
+}
+
+#main-content {
+    width: 95%;
+    margin:auto;
+    background: #bbc7e2;
+    border-radius:5px;
+}
+
+#assignments {
+    align-items: center;
+}
+
+#task {
+    color: #3D52A0;
+    text-align: center;
+}
+
+/* Heading styles 
+h1 {
+    color: #3D52A0;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #3D52A0;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h3 {
+    color: #3D52A0;
+    font-size: 1.5em;
+}
+
+
+p {
+    color: #7091E6;
+    font-size: 1.2em;
+    line-height: 1.5;
+    align-items: center;
+}
+
+
+a {
+    color: #2980B9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #EDE8f5;
+} 
+    */
 

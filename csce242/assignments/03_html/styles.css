@@ -1,0 +1,102 @@
+/* Structure */
+body {
+    background-color: rgb(211, 190, 162);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+#main-content {
+    width: 75%; /* Takes up 75% of the container's width */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#main-header {
+    text-align: center;
+    color: rgb(81,128, 150);
+}
+
+.four {
+    text-align: center;
+    text-decoration: white;
+    background-color: rgb(138, 195, 223);
+    width: 75%;
+}
+
+#columns section {
+    text-decoration: white;
+}
+
+#titles section {
+    text-decoration: white;
+}
+
+#image section {
+    text-align: center;
+}
+
+#main-nav ul {
+    padding-left: 0%;
+}
+
+#main-nav li {
+    list-style: none;
+    border-left: 1px white;
+    border-bottom: rgb(138, 195, 223);
+}
+
+#main-nav a {
+    text-decoration: none;
+    padding: 1px;
+    background: salmon;
+    color: white;
+    display: block;
+    border-bottom: rgb(138, 195, 223);
+}
+
+#main-aside {
+    width: 25%; /* Takes up 25% of the container's width */
+    background-color: salmon;
+    text-decoration: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Typography */
+#main-footer {
+    text-align: center;
+}
+
+/* Apply to 600px and larger */
+@media only screen and (min-width: 600px) {
+    .columns {
+        display:flex;
+    }
+    .one {
+        flex:1;
+    }
+    .two {
+        flex:2;
+    }
+    .three {
+        flex:3;
+    }
+    .four {
+        flex:4;
+    }
+    #main-nav li {
+        flex:1;
+    }
+}
+
+/* Apply to 768px and larger */
+@media only screen and (min-width: 760px) {
+
+}
