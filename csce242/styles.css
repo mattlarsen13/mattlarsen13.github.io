@@ -10,7 +10,6 @@ body {
 }
 
 #main-content {
-    display: flex; 
     justify-content: space-between; 
     padding: 50px;
 }
@@ -68,82 +67,19 @@ a:hover {
 
 /* Apply to 600px and larger */
 @media only screen and (min-width: 600px) {
+    .columns {
+        display:flex;
+    }
     .main-content {
         display:flex;
         flex-direction: column;
         align-items: center;
+        width: 70%;
+        margin:auto;
     }
     .one {
         flex:1;
     }
 }
 
-
-
-
-
-
-
-
-
-/* Structure 
-body {
-    background-color: #adbbda;
-    font-family: 'Georgia', sans-serif;
-}
-
-#main-content {
-    width: 95%;
-    margin:auto;
-    background: #bbc7e2;
-    border-radius:5px;
-}
-
-#assignments {
-    align-items: center;
-}
-
-#task {
-    color: #3D52A0;
-    text-align: center;
-}
-
-/* Heading styles 
-h1 {
-    color: #3D52A0;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-h2 {
-    color: #3D52A0;
-    font-size: 1.5em;
-    text-align: center;
-}
-
-h3 {
-    color: #3D52A0;
-    font-size: 1.5em;
-}
-
-
-p {
-    color: #7091E6;
-    font-size: 1.2em;
-    line-height: 1.5;
-    align-items: center;
-}
-
-
-a {
-    color: #2980B9;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    color: #EDE8f5;
-} 
-    */
 

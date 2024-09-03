@@ -1,0 +1,77 @@
+/* Structure */
+:root {
+    --main-background-color: skyblue;
+}
+body {
+    background-color: var(--main-background-color);
+}
+
+#content {
+    background: white;
+}
+
+.columns-all {
+    display:flex;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Header */
+#main-header {
+    position: relative;
+}
+
+#main-img {
+    margin-right: 5px;
+}
+
+/* Login Menu */
+#login-menu {
+    width: fit-content;
+    position: absolute;
+    top:3%;
+    right:3%;
+}
+
+#login-menu ul {
+    padding-left: 0;
+    display: none;
+}
+
+#login-menu li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+#login-menu a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+#login-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Static - cant move, Absolute- doesnt reserve the space in output, relatvive to the window, Relative - reserves space in output * /
+
+
+/* Larger Resolutions */
+@media only screen and (min-width:600px) {
+    #content {
+        width: 70%;
+        margin:auto;
+    }
+    .columns {
+        display:flex;
+    }
+
+    #settings {
+        display:none;
+    }
+    
+    #login-menu ul {
+        display:flex;
+    }
+}
