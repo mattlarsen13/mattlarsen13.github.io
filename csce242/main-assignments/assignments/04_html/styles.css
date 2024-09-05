@@ -1,0 +1,273 @@
+/* Structure */
+:root {
+    --header-background-color: #000;
+    --main-background-color: #fff;
+    --hover-background-color: #cc2e40;
+    --red-background-color: #73000A;
+    --admission-hover-background-color: #570008;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+#content {
+    background-color: var(--main-background-color);
+}
+
+/* Header */
+#main-header {
+    background-color: var(--header-background-color);
+    height: 110px;
+    position: relative;
+}
+
+#head-columns {
+    display:flex;
+    background-color: var(--main-background-color);
+}
+
+.web-title1 {
+    color: var(--main-background-color);
+    position: absolute;
+    top:20%;
+    left:17%;
+    font-size: 0.6em;
+}
+.web-title2 {
+    color: var(--main-background-color);
+    position: absolute;
+    top:23%;
+    left:17%;
+    font-size: medium;
+}
+
+
+.columns {
+    color: var(--main-background-color);
+}
+
+#main-img {
+    max-width: 100%;
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--main-background-color);
+    position: absolute;
+    top:20%;
+    left:12%;
+}
+
+
+
+/* Gateway Menu */
+#gateway-menu {
+    width: fit-content;
+    position: absolute;
+    top:0.001%;
+    right:30%;
+    font-size: x-small;
+}
+
+#gateway-menu ul {
+    padding-left: 0;
+    display: none;
+}
+
+#gateway-menu li {
+    list-style-type: none;
+    margin-left: 12px;
+}
+
+#gateway-menu a {
+    text-decoration: none;
+    color: var(--main-background-color);
+    background-color: var(--header-background-color);
+}
+
+#gateway-menu a:hover {
+    text-decoration: none;
+    background-color: var(--hover-background-color);
+}
+
+#search {
+    border: 1px solid var(--main-background-color);
+    display: block;
+}
+
+#menu {
+    border: 1px solid var(--main-background-color);
+    display: block;
+}
+
+/* Tool Menu */
+#tool-menu {
+    width: fit-content;
+    position: absolute;
+    top:0.001%;
+    right:8%;
+    font-size: x-small;
+}
+
+#tool-menu ul {
+    padding-left: 0;
+    display: none;
+}
+
+#tool-menu li {
+    list-style-type: none;
+    margin-left: 12px;
+    padding-right: 10px;
+    border-right: 1px solid var(--main-background-color);
+}
+#tool-menu li:last-child {
+    border-right: none; 
+}
+
+#tool-menu a {
+    text-decoration: none;
+    color: var(--main-background-color);
+    background-color: var(--header-background-color);
+}
+
+#tool-menu a:hover {
+    text-decoration: none;
+    background-color: var(--hover-background-color);
+}
+
+/* Red Option Area */
+#option_menu {
+    width: 100%;
+    color: var(--main-background-color);
+    background-color: var(--red-background-color);
+    position: absolute;
+    top:100%;
+}
+
+#option_menu ul {
+    padding-left: 4%;
+    padding-right: 4%;
+    display: none;
+}
+
+#option_menu li {
+    list-style-type: none;
+    margin-left: 5.5%;
+}
+
+#option_menu a {
+    text-decoration: none;
+    color: var(--main-background-color);
+}
+
+#option_menu a:hover {
+    color:var(--hover-background-color);
+}
+
+#option_menu li:nth-child(4) a {
+    background-color: var(--admission-hover-background-color);
+    padding: 16.5%;
+}
+
+/* clg img */
+#davis-college { 
+    width: 100%;
+    object-fit: cover;
+}
+
+/* gs_admiss */
+.gs_admiss {
+    background-color: var(--main-background-color);
+    max-height: 1000px;
+}
+
+.gs_header_large {
+    background-color: var(--red-background-color);
+    color: var(--main-background-color);
+    font-size: 3.25em;
+    max-width: 885px;
+    text-align: center;
+    margin-left: 5%;
+    padding-top: 0.01%;
+    padding-bottom: 0.01%;
+    display: none;
+}
+.gs_header_small {
+    color: var(--admission-hover-background-color);
+    background-color: var(--main-background-color);
+    display:block;
+}
+
+.gs_paragraph {
+    text-align: center;
+}
+
+
+/* Exp Degree */
+.exp_degree {
+    background-color: var(--red-background-color);
+    color: var(--main-background-color);
+}
+
+#scientist {
+    max-width: 760px;
+    max-height: 530px;
+}
+
+.app_req {
+    background-color: var(--header-background-color);
+    color: var(--main-background-color);
+    border-right: 1px solid var(--main-background-color);
+}
+
+
+
+
+/* Larger Resolutions */
+@media only screen and (min-width:600px) {
+    #content {
+        width: 100%;
+        margin:auto;
+    }
+    .columns {
+        display:flex;
+    }
+
+    #menu {
+        display: none;
+    }
+    #search {
+        display: none;
+    }
+
+    #settings {
+        display:none;
+    }
+    
+    #gateway-menu ul {
+        display: flex;
+    }
+
+    #tool-menu ul {
+        display: flex;
+    }
+
+    #option_menu ul {
+        display: flex;
+    }
+
+    #davis-college {
+        display: flex;
+    }
+
+    .gs_header_large {
+        display: block;
+    }
+
+    .gs_header_small {
+        display: none;
+    }
+}

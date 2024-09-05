@@ -1,6 +1,10 @@
 /* Structure */
 :root {
     --main-background-color: skyblue;
+    --gallery-back: aliceblue;
+    --primary-color: darkblue;
+    --secondary-color: skyblue;
+    --highlight-color: pink;
 }
 body {
     background-color: var(--main-background-color);
@@ -25,6 +29,13 @@ img {
 
 #main-img {
     margin-right: 5px;
+}
+
+/* gallery */
+#gallery section {
+    background: var(--gallery-back);
+    padding: 10px;
+    margin: 10px;
 }
 
 /* Login Menu */
@@ -54,7 +65,40 @@ img {
     text-decoration: underline;
 }
 
-/* Static - cant move, Absolute- doesnt reserve the space in output, relatvive to the window, Relative - reserves space in output * /
+/* ball animation */
+#ball {
+    width:50px;
+    height:50px;
+    background:magenta;
+    border-radius:50%;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes bounce {
+    0% {
+        background: magenta;
+        top:0;
+    }
+    25% {
+        background: cyan;
+    }
+    50% {
+        background: yellow;
+        top:100px;
+    }
+    75% {
+        background: blue;
+    }
+    100% {
+        background: green;
+        top:0px;
+    }
+}
+
+/* Static - cant move, Absolute- doesnt reserve the space in output, relatvive to the window, Relative - reserves space in output * / 
 
 
 /* Larger Resolutions */
@@ -73,5 +117,17 @@ img {
     
     #login-menu ul {
         display:flex;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    #gallery {
+        flex-wrap: wrap;
+    }
+
+    #gallery section {
+        flex: 30%;
     }
 }
