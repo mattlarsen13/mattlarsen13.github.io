@@ -5,6 +5,7 @@
     --hover-background-color: #cc2e40;
     --red-background-color: #73000A;
     --admission-hover-background-color: #570008;
+    --edu-invest-color: #ECECEC;
 }
 
 body {
@@ -14,6 +15,9 @@ body {
     height: 100%;
 }
 
+p {
+    line-height: 1.6;
+}
 
 #content {
     background-color: var(--main-background-color);
@@ -29,6 +33,7 @@ body {
 #head-columns {
     display:flex;
     background-color: var(--main-background-color);
+    justify-content: flex-start;
 }
 
 .web-title1 {
@@ -46,23 +51,6 @@ body {
     font-size: medium;
 }
 
-
-.columns {
-    color: var(--main-background-color);
-}
-
-#main-img {
-    max-width: 100%;
-    width: 60px;
-    height: 60px;
-    border: 1px solid var(--main-background-color);
-    position: absolute;
-    top:20%;
-    left:12%;
-}
-
-
-
 /* Gateway Menu */
 #gateway-menu {
     width: fit-content;
@@ -74,7 +62,7 @@ body {
 
 #gateway-menu ul {
     padding-left: 0;
-    display: none;
+    display: block;
 }
 
 #gateway-menu li {
@@ -93,16 +81,6 @@ body {
     background-color: var(--hover-background-color);
 }
 
-#search {
-    border: 1px solid var(--main-background-color);
-    display: block;
-}
-
-#menu {
-    border: 1px solid var(--main-background-color);
-    display: block;
-}
-
 /* Tool Menu */
 #tool-menu {
     width: fit-content;
@@ -114,7 +92,7 @@ body {
 
 #tool-menu ul {
     padding-left: 0;
-    display: none;
+    display: block;
 }
 
 #tool-menu li {
@@ -155,7 +133,7 @@ body {
 
 #option_menu li {
     list-style-type: none;
-    margin-left: 5.5%;
+    margin-left: 5%;
 }
 
 #option_menu a {
@@ -167,11 +145,6 @@ body {
     color:var(--hover-background-color);
 }
 
-#option_menu li:nth-child(4) a {
-    background-color: var(--admission-hover-background-color);
-    padding: 16.5%;
-}
-
 /* clg img */
 #davis-college { 
     width: 100%;
@@ -181,7 +154,7 @@ body {
 /* gs_admiss */
 .gs_admiss {
     background-color: var(--main-background-color);
-    max-height: 1000px;
+    max-height: 800px;
 }
 
 .gs_header_large {
@@ -191,18 +164,38 @@ body {
     max-width: 885px;
     text-align: center;
     margin-left: 5%;
-    padding-top: 0.01%;
-    padding-bottom: 0.01%;
+    padding-top: 0.001px;
+    padding-bottom: 0.001px;
     display: none;
+    position: absolute;
+    top: 800px;
 }
 .gs_header_small {
     color: var(--admission-hover-background-color);
     background-color: var(--main-background-color);
     display:block;
+    font-size: 2.5em;
 }
 
-.gs_paragraph {
-    text-align: center;
+.gs_paragraph1 {
+    margin-left: 250px;
+    margin-top: 25px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    max-width: 700px;
+    font-size: 1.50em;
+    display: flex;
+    
+}
+.gs_paragraph2 {
+    margin-left: 250px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+    max-width: 700px;
+    font-size: 1.25em;
+    display: flex;
 }
 
 
@@ -210,21 +203,230 @@ body {
 .exp_degree {
     background-color: var(--red-background-color);
     color: var(--main-background-color);
+    
 }
 
 #scientist {
-    max-width: 760px;
+    max-width: 100%;
     max-height: 530px;
 }
 
 .app_req {
     background-color: var(--header-background-color);
     color: var(--main-background-color);
-    border-right: 1px solid var(--main-background-color);
+    border: 1px solid var(--main-background-color);
+    max-width: 325px;
+    text-align: center;
+    
+}
+
+.app_req a {
+    color: var(--main-background-color); 
+    background-color: var(--header-background-color); 
+    display: block; 
+    border: 1px solid var(--main-background-color); 
+    text-decoration: none;
+    padding: 5%;
+}
+
+.app_req a:hover {
+    background-color: var(--main-background-color);
+    color: var(--red-background-color);
+    border: 1px solid var(--main-background-color);
+}
+
+.exp_para {
+    padding-left: 3%;
+    padding-top: 7%;
+    font-size: 1.5em;
+}
+.exp_para2 {
+    max-width: 500px;
+    font-size: 0.75em;
+    display:block;
 }
 
 
+/* EDU Invest */
+.edu_invest {
+    background-color: var(--edu-invest-color);
+    color: var(--red-background-color);
+    text-align: center;
+    font-size: 1.5em;
+    padding: 5%;
+}
+.edu_para1 {
+    color: var(--header-background-color);
+    max-width: 600px;
+    font-size: 0.75em;
+    padding-left: 385px;
+}
+.edu_para2 {
+    color: var(--main-background-color);
+    background-color: var(--red-background-color);
+    max-width: 250px;
+    margin-left: 200px;
+}
+.edu_para2 a {
+    color: var(--main-background-color); 
+    background-color: var(--red-background-color); 
+    display: block; 
+    border: 1px solid var(--red-background-color); 
+    text-decoration: none;
+    padding:5%;
+}
+.edu_para2 a:hover {
+    background-color: var(--main-background-color);
+    color: var(--red-background-color);
+    border: 1px solid var(--red-background-color);
+}
 
+/* Pay School */
+.pay_school {
+    text-align: center;
+    margin-top: 10%;
+    color: var(--red-background-color);
+    background-color: var(--main-background-color);
+    font-size: 1.5em;
+    padding-bottom: 5%;
+}
+
+.pay_para {
+    text-align: center;
+    color: var(--header-background-color);
+    max-width: 800px;
+    padding-left: 350px;
+    padding-bottom: 3%;
+    font-size: 0.75em;
+
+}
+
+h2 {
+    color: var(--red-background-color);
+}
+
+.column_pay {
+    display: flex;
+    max-width: 75%;
+    padding-left: 12%;
+    color: var(--header-background-color);
+    font-size: 0.75em;
+}
+
+.one {
+    padding: 3%;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.one:hover {
+    background-color: var(--red-background-color);
+    color: var(--main-background-color);
+    transform: scale(1.05); 
+    cursor: pointer;
+}
+
+.one img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.one:hover img {
+    transform: scale(1.1); 
+}
+
+.one h2, .one p {
+    transition: color 0.3s ease;
+}
+
+.one:hover h2, .one:hover p {
+    color: var(--main-background-color);
+}
+
+/* Next Step */
+.next_step {
+    background-color: var(--header-background-color);
+    color: var(--main-background-color);
+    display: flex;
+    position: relative;
+}
+#grad_girl {
+   padding-left: 15%;
+   position: absolute;
+   bottom: 5%;
+}
+.take_next {
+    padding-left: 40%;
+    max-height: 500px;
+    max-width: 1000px;
+    font-size: 1.5em;
+    padding-top: 7%;
+    position: relative;
+}
+.take_para {
+    font-size: 0.75em;
+}
+.app_now {
+    background-color: var(--red-background-color);
+    color: var(--main-background-color);
+    max-width: 200px;
+    max-height: 80px;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 2%;
+    padding: 2%;
+
+}
+.app_now a {
+    background-color: var(--red-background-color);
+    color: var(--main-background-color);
+    max-width: 200px;
+    max-height: 80px;
+    text-decoration: none;
+    display: block;
+    padding: 5%;
+}
+.app_now a:hover {
+    background-color: var(--main-background-color);
+    color: var(--red-background-color);
+    max-width: 200px;
+    max-height: 80px;
+    border: 1px solid var(--red-background-color);
+    padding: 5%;
+}
+
+/* Bottom */
+.bottom {
+    background-color: var(--red-background-color);
+    color: var(--main-background-color);
+    max-height: 500px;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.college ul, .office ul, .tools ul {
+    display: flex;
+    margin-left: 20%;
+}
+.college li, .office li, .tools li {
+    list-style-type: none;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 1px solid var(--main-background-color);
+    
+}
+.college li:last-child, .office li:last-child, .tools li:last-child {
+    border-left: none;
+}
+.college a, .office a, .tools a {
+    text-decoration: none;
+    color: var(--main-background-color);
+    background-color: var(--red-background-color);
+}
+.college a:hover, .office a:hover, .tools a:hover {
+    text-decoration: none;
+    background-color: var(--hover-background-color);
+}
 
 /* Larger Resolutions */
 @media only screen and (min-width:600px) {
@@ -232,19 +434,9 @@ body {
         width: 100%;
         margin:auto;
     }
-    .columns {
-        display:flex;
-    }
-
-    #menu {
-        display: none;
-    }
-    #search {
-        display: none;
-    }
-
-    #settings {
-        display:none;
+    #head-columns {
+        align-items: flex-start;
+        flex-direction: row;
     }
     
     #gateway-menu ul {
@@ -269,5 +461,284 @@ body {
 
     .gs_header_small {
         display: none;
+    }
+
+    .gs_paragraph1 {
+        display: flex;
+    }
+    .gs_paragraph2 {
+        display: flex;
+    }
+
+    #scientist {
+        display: flex;
+    }
+    .exp_degree {
+        display: flex;
+    }
+
+    .edu_invest, .edu_para1, .edu_para2 {
+        display: block;
+    }
+
+    .column_pay {
+        display: flex;
+    }
+
+
+    /* Footer */
+    .footer {
+        color: var(--main-background-color);
+        background-color: var(--header-background-color);
+        max-height: 75px;
+        max-width: 100%;
+        font-size: 0.5em;
+        border: 1px solid var(--main-background-color);
+    }
+    .footer ul {
+        display: flex;
+        margin-left: 10%;
+    }
+    .footer li {
+        list-style-type: none;
+        margin-left: 20px;
+        padding-right: 10px;
+        border-right: 1px solid var(--main-background-color);
+    }
+    .footer li:last-child {
+        border-right: none;
+    }
+    .footer a {
+        text-decoration: none;
+        color: var(--main-background-color);
+        background-color: var(--header-background-color);
+    }
+    .footer a:hover {
+        text-decoration: none;
+        background-color: var(--hover-background-color);
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    
+    #main-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    #gateway-menu {
+        display: flex; 
+    }
+
+
+    .head-columns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #option_menu {
+        position: relative;
+        top:auto;
+
+        margin-top: 90px; 
+        width: 100%; 
+        text-align: center; 
+        padding: 10px 0; 
+        background-color: var(--red-background-color);
+    }
+
+    #option_menu li {
+        padding-left: 0%;
+    }
+
+    .clg_img {
+        margin-top: 200px;
+    }
+
+    #davis_college {
+        margin-top: 20px;
+        position: absolute;
+    }
+
+    #option_menu ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .gs_header_small {
+        padding-left: 5%;
+    }
+
+    .gs_paragraph1 {
+        text-align: left;
+        margin-left: 5%;
+    }
+    .gs_paragraph2 {
+        text-align: left;
+        margin: 20px auto;
+    }
+
+    /* Exp Degree */
+    #scientist {
+        border: 20px solid var(--red-background-color);
+        max-width: 90%;
+    }
+    .exp_degree {
+        text-align: left;
+        padding-left: 5%;
+        padding-bottom: 2%;
+    }
+
+    .exp_para {
+        padding-left: 3%;
+    }
+
+    .exp_para2 {
+        margin: 5%;
+        padding-right: 10%;
+    }
+
+    /* EDU Invest */
+    .edu_invest {
+        text-align: center;
+        padding: 5%;
+    }
+    .edu_para1 {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 5%;
+        text-align: center;
+    }
+    .edu_para2 {
+        max-width: 200px;
+        margin: 20px auto;
+        text-align: center;
+    }
+    
+    /* Paying for School */
+    .pay_school {
+        text-align: center;
+        padding: 5%;
+    }
+    .pay_para {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 5%;
+        text-align: center;
+        padding-bottom: 2%;
+    }
+    .column_pay {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .one {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    /* Next Step */
+    .next_step {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        padding-left: 2%;
+        min-height: 800px;
+    }
+    #grad_girl {
+        padding-right: 5%;
+        padding-bottom: 70%;
+        margin-top: 5%;
+        margin-bottom: 20px;
+        height: auto;
+    }
+    .take_next {
+        padding-top: 60%;
+        padding-right: 20%;
+        width: 70%;
+        padding: 0 10%;
+    }
+    .take_para {
+        padding-top: 40%;
+        margin: 0 auto;
+        margin-top: 70%;
+    }
+    .app_now {
+        max-width: 200px;
+        margin: 20px auto; 
+    }
+
+   
+    /* Bottom */
+    .bottom {
+        background-color: var(--red-background-color);
+        color: var(--main-background-color);
+        max-height: 1000px;
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .college ul, .office ul, .tools ul {
+        display: flex;
+        
+        flex-direction: column;
+    }
+    .college li, .office li, .tools li {
+        list-style-type: none;
+        margin-right: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    
+    }
+    .college a, .office a, .tools a {
+        text-decoration: none;
+        color: var(--main-background-color);
+        background-color: var(--red-background-color);
+    }
+    .college a:hover, .office a:hover, .tools a:hover {
+        text-decoration: none;
+        background-color: var(--hover-background-color);
+    }
+
+    /* Footer */
+    .footer {
+        background-color: var(--header-background-color);
+        color: var(--main-background-color);
+        max-height: 75px;
+        max-width: 100%;
+        font-size: 0.5em;
+        padding-right: 12%;
+        border: 1px solid var(--main-background-color);
+    }
+    .footer ul {
+        display: flex;
+    }
+    .footer li {
+        list-style-type: none;
+        border-right: 1px solid var(--main-background-color);
+        padding-right: 2%;
+    }
+    .footer li:last-child {
+        border-right: none;
+    }
+    .footer a {
+        text-decoration: none;
+        color: var(--main-background-color);
+        background-color: var(--header-background-color);
+    }
+    .footer a:hover {
+        text-decoration: none;
+        background-color: var(--hover-background-color);
     }
 }
