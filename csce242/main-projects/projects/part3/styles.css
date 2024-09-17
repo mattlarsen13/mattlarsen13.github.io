@@ -21,7 +21,7 @@ body {
     padding: 10px 0;
 }
 .navigation a {
-    text-decoration: underline;
+    text-decoration: none;
     color: var(--black-color);
     margin: 20px;
 }
