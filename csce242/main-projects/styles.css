@@ -16,7 +16,7 @@ body {
 
 #main-content section {
     flex: 1; 
-    margin: 0 10px; 
+    margin: 0 5px; 
 }
 
 #main-footer {
@@ -28,31 +28,18 @@ body {
     color: #3D52A0;
 }
 
-#project1 {
+#project {
     color: #3D52A0;
     background-color: #bbc7e2;
-    width: 350px;
+    max-width: 500px;
     height: 350px;
     text-align: center;
     align-content: center;
 }
 
-#project2 {
-    color: #3D52A0;
-    background-color: #bbc7e2;
-    width: 350px;
-    height: 350px;
-    text-align: center;
-    align-content: center;
-}
-
-#project3 {
-    color: #3D52A0;
-    background-color: #bbc7e2;
-    width: 350px;
-    height: 350px;
-    text-align: center;
-    align-content: center;
+p {
+    max-width: 90%;
+    padding-left: 5%;
 }
 
 a {
@@ -76,6 +63,7 @@ a:hover {
         align-items: center;
         width: 70%;
         margin:auto;
+        padding-top: 5%;
     }
     .one {
         flex:1;

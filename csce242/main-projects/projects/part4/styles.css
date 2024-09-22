@@ -1,0 +1,259 @@
+/* Structure / In all of pages */
+:root {
+    --black-color: #000;
+    --white-color: #fff;
+    --background-color: #3bb9dfd1;
+    --dark-blue: #0d6682d1;
+    --very-dark-blue: #073544d1;
+    --grey: #e0dede;
+}
+
+body {
+    background: linear-gradient(to bottom, var(--background-color), var(--grey));
+    margin: 0;
+    color: var(--dark-blue);
+}
+
+.bangers-regular {
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header {
+    text-align: center;
+}
+
+.navigation {
+    justify-content: center;
+    display: flex;
+    padding: 10px 0;
+}
+.navigation a {
+    text-decoration: none;
+    color: var(--dark-blue);
+    margin: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.navigation h2 {
+    margin: 0 20px;
+    padding: 0;
+}
+.navigation h2 a {
+    padding: 10px 0;
+}
+.navigation a:hover {
+    color: var(--very-dark-blue);
+}
+
+.border-line {
+    border: none;
+    height: 1px;  
+    background-color: var(--black-color); 
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+.footer {
+    text-align: center;
+}
+
+
+/* Home */
+.description {
+    max-width: 70%;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 1em;
+}
+.images {
+    margin-top: 50px;
+    margin-left: 140px;
+}
+.slide-show {
+    border-radius: 20px;
+    width:1200px;
+    height:500px;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+}
+.slides {
+    margin-top: 10px;
+    padding-left: 450px;
+    margin-bottom: 45px;
+}
+.slide1, .slide2, .slide3 {
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+}
+
+/* Player-College */
+.player-title {
+    text-align: center;
+}
+.players {
+    display: flex;
+    text-align: center;
+    width: 90%;
+    padding-left: 5%;
+    padding-bottom: 1.5%;
+}
+.players div {
+    margin: 0 10px; 
+}
+.player1, .player2, .player3 {
+    border: 1px solid var(--black-color); 
+    padding: 10px;
+    border-radius: 5px; 
+}
+.players a {
+    text-decoration: none;
+    color: var(--dark-blue);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.players a:hover {
+    color: var(--very-dark-blue);
+}
+
+/* Coach-Team */
+.coach-team {
+    display: flex;
+    text-align: center;
+}
+.coach div {
+    margin: 0 10px; 
+    margin-bottom: 10px;
+}
+.team div {
+    margin: 0 10px;
+    margin-bottom: 10px;
+}
+.coach1, .coach2, .coach3 {
+    border: 1px solid var(--black-color); 
+    padding: 10px;
+    border-radius: 5px; 
+    max-width: 1500px;
+}
+.team1, .team2, .team3 {
+    border: 1px solid var(--black-color); 
+    padding: 10px;
+    border-radius: 5px; 
+    max-width: 1500px;
+}
+
+/* Add-Delete */
+.add-delete-title {
+    text-align: center;
+}
+.add-delete {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -2%;
+    text-align: center;
+}
+input[type="text"] {
+    width: 300px; 
+    height: 40px; 
+    padding: 5px; 
+    font-size: 16px; 
+    border: 2px solid var(--black-color); 
+    border-radius: 5px; 
+}
+input[type="answer"] {
+    width: 300px; 
+    height: 200px; 
+    padding: 5px; 
+    font-size: 16px; 
+    border: 2px solid var(--black-color); 
+    border-radius: 5px; 
+}
+button {
+    padding: 10px 20px; 
+    font-size: 16px;
+    color: var(--dark-blue); 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+button a {
+    color: var(--dark-blue);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    color: var(--very-dark-blue);
+}
+
+/* About-Contact */
+.about {
+    text-align: center;
+}
+.contact-title {
+    text-align: center;
+}
+.contact {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 3%;
+}
+.contact h3 {
+    text-align: center;
+}
+.about p {
+    max-width: 70%;
+    text-align: center;
+    margin: 20px auto;
+}
+.about-img {
+    border-radius: 20px;
+
+}
+
+/* Max Width 600px */
+@media only screen and (max-width: 600px) {
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom:10px;
+    }
+
+    /* Home */
+    .description {
+        flex-direction: column;
+        max-width: 80%;
+    }
+    .images {
+        display: none;
+    }
+
+    /* Player-College */
+    .players {
+        flex-direction: column;
+    }
+    .players div {
+        margin: 10px 0; 
+    }
+
+    /* Coach-Team */
+    .coach-team {
+        flex-direction: column;
+    }
+
+    /* Add-Delete */
+    .add-delete {
+        flex-direction: column;
+        text-align: center;
+    }
+    .delete {
+        margin-top: 5%;
+    }
+
+
+    /* About-Contact */
+    .slide-show {
+        display: none;
+    }
+}

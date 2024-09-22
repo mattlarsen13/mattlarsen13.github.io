@@ -29,15 +29,34 @@
         <a id="click-link" href="#">Click Me</a>
       </div>
       <div>
-        <h2>Color Collector</h2>
+        <h2>Color Colector</h2>
         <p>
           <label for="txt-color">Enter Color: </label>
           <input id="txt-color" type="color">
 
-          <!--Create a ball, give id of ball. When you pick a color change the color of the ball will match-->
-          <button id ="move-down">Down</button>
+          <!-- Create a ball, give it the id of ball
+           When you pick a color change the color of the all to match-->
+           <button id="move-down">down</button>
         </p>
-        <div id = "ball"></div>
+        <div id="ball"></div>
+      </div>
+      <div>
+        <p>
+          <label for="txt-enter-color">Enter Color: </label>
+          <input type="text" id="txt-enter-color">
+          <button id="btn-show-color">Show</button>
+        </p>
+        <p id="color-message"></p>
+      </div>
+      <div>
+        <h3>Charity</h3>
+        <p>
+          <label for="txt-donations">Donations: </label>
+          <input type="number" id="txt-donations">
+          <span id="error-donation" class="error"></span>
+        </p>
+        <p><button id="btn-donate">Donate</button></p>
+        <section id="funds-thermometer"></section>
       </div>
     </main>
 
