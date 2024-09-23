@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Conditionals</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class = "title">
+            <h1>Assignment 6</h1>
+            <h2>If Statements</h2>         
+        </div>
+        <div class = "content">
+            <!--Exercise 1 and 2 Buttons-->
+            <div class="exercise-buttons">
+                <button onclick="showExercise(1)">Exercise 1</button>
+                <button onclick="showExercise(2)">Exercise 2</button>
+            </div>
+            <!--Color Slider Function-->
+            <div id="color-slider" class="color-section hidden">
+                
+                <div id = "color-box">
+                    <input type="range" id="slider" min="0" max="255" oninput="updateColor()">
+                    <h3>Color Slider</h3>
+                    <p id="slider-value">Color: 0</p>
+                    <p id="color-message"></p>
+                </div>
+            </div>
+            <!--Picture Chooser Function-->
+            <div id="picture-chooser" class="picture-section hidden">
+                <h3>Picture Chooser</h3>
+                <button onclick="choosePicture('small')">Small</button>
+                <button onclick="choosePicture('medium')">Medium</button>
+                <button onclick="choosePicture('large')">Large</button>
+                <div id="image-container"></div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html> 
