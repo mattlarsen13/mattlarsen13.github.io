@@ -1,0 +1,83 @@
+/* Structure */ 
+:root { 
+    --background: #d1d0a8;
+    --blue: #16727e;
+    --red: #b66b6b;
+    --slider-box-bg: #ffffff;
+    --black: #000;
+}
+body {
+    background-color: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: var(--blue);
+}
+h2 {
+    color: var(--red);
+}
+.title {
+    text-align: center;
+}
+footer {
+    text-align: center;
+    color: var(--blue);
+}
+
+.content {
+    flex-direction: column;
+    padding-left: 25%;
+    max-width: 50%;
+}
+
+.hidden {
+    display: none;
+}
+.visible {
+    display: flex;
+}
+
+/* Outer Box */
+.outer-box {
+    background-color: var(--blue);
+    height: 600px;
+}
+.answer, .button, p {
+    margin: 10px;
+}
+.error-message {
+    color: var(--red); 
+    visibility: hidden;
+}
+.inner-box {
+    background-color: var(--black);
+    width:90%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    height:500px;
+    border: 1px solid var(--slider-box-bg);
+    position: relative;
+}
+
+/* Star Design - From Web Master on Youtube */
+.star {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid var(--slider-box-bg);
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.star:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid var(--slider-box-bg);
+    margin: 3px 0 0 -5px;
+}
