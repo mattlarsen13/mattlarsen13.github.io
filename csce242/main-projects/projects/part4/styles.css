@@ -27,6 +27,7 @@ img {
 
 .header {
     text-align: center;
+    color: var(--very-dark-blue);
 }
 
 .navigation {
@@ -50,6 +51,21 @@ img {
 .navigation a:hover {
     color: var(--very-dark-blue);
 }
+.navigation h2.active {
+    font-weight: bold;
+    color: var(--very-dark-blue);
+}
+
+
+.hamburger div {
+    display: none;
+    width:25px;
+    height:2px;
+    background-color:black;
+    margin:6px 0;
+    margin-left: 20px;
+}
+
 
 .border-line {
     border: none;
@@ -71,6 +87,10 @@ img {
     margin: 20px auto;
     font-size: 1em;
 
+}
+.description h2.active {
+    font-weight: bold;
+    color: var(--very-dark-blue);
 }
 .description p {
     font-size: large;
@@ -102,6 +122,14 @@ img {
 .player-title {
     text-align: center;
 }
+.player-title h2.active {
+    font-weight: bold;
+    color: var(--very-dark-blue);
+}
+.players h2.active {
+    font-weight: bold;
+    color: var(--very-dark-blue);
+}
 .players {
     display: flex;
     text-align: center;
@@ -117,6 +145,12 @@ img {
     border-radius: 5px; 
     background-color: var(--section-color);
 }
+.player1, .player2, .player3 {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--section-color);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3); 
+}
 .players a {
     text-decoration: none;
     color: var(--dark-blue);
@@ -131,9 +165,25 @@ img {
     display: flex;
     text-align: center;
 }
+.team h2.active {
+    font-weight: bold;
+    color: var(--very-dark-blue);
+}
+.coach h2.active {
+    font-weight: bold;
+    color: var(--very-dark-blue);
+}
 .coach div {
     margin: 0 10px; 
     margin-bottom: 10px;
+}
+.coach h2.active {
+    font-weight: bold;
+    color: var(--very-dark-blue);
+}
+.team h2.active {
+    font-weight: bold;
+    color: var(--very-dark-blue);
 }
 .team div {
     margin: 0 10px;
@@ -145,16 +195,32 @@ img {
     border-radius: 5px; 
     max-width: 1300px;
 }
+.coach1, .coach2, .coach3 {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--section-color);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3); 
+}
 .team1, .team2, .team3 {
     background-color: var(--section-color);
     padding: 10px;
     border-radius: 5px; 
     max-width: 1300px;
 }
+.team1, .team2, .team3 {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--section-color);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3); 
+}
 
 /* Add-Delete */
 .add-delete-title {
     text-align: center;
+}
+.add-delete-title h2.active {
+    font-weight: bold;
+    color: var(--very-dark-blue);
 }
 .add-delete {
     display: flex;
@@ -200,6 +266,10 @@ button:hover {
 .about {
     text-align: center;
 }
+.about h2.active {
+    font-weight: bold;
+    color: var(--very-dark-blue);
+}
 .contact-title {
     text-align: center;
 }
@@ -225,9 +295,14 @@ button:hover {
 /* Max Width 600px */
 @media only screen and (max-width: 600px) {
     .navigation {
+        display: none;
         flex-direction: column;
         align-items: center;
         padding-bottom:10px;
+    }
+    
+    .navigation.active {
+        display: flex; 
     }
 
     /* Home */
@@ -272,5 +347,16 @@ button:hover {
     .about-img {
         max-width: 80%;
         padding-left: 5%;
+    }
+
+
+
+    .hamburger div{
+        display: flex;
+        width:25px;
+        height:2px;
+        background-color: var(--very-dark-blue);
+        margin:6px 0;
+        margin-left: 20px;
     }
 }
