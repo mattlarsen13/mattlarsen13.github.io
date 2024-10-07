@@ -1,5 +1,5 @@
 /* Structure */ 
-:root { 
+:root {  
     --background: #d1d0a8;
     --blue: #16727e;
     --red: #b66b6b;
@@ -24,4 +24,80 @@ footer, footer a {
     text-align: center;
     color: var(--blue);
     text-decoration: none;
+}
+
+/* Bird Grid */
+.bird-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.bird-card {
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+    background-color: var(--blue);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px; 
+}
+.bird-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.modal-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    padding: 20px;
+}
+
+.bird-info {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.bird-image img {
+    max-width: 400px; 
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Modal Style */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
