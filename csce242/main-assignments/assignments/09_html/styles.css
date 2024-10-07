@@ -104,3 +104,21 @@ footer, footer a {
     text-decoration: none;
     cursor: pointer;
 }
+
+
+@media screen and (max-width: 600px) {
+    .modal-content {
+        width: 90%; 
+        margin: 10% auto; 
+        padding: 15px; 
+    }
+
+    .modal-header h2 {
+        font-size: 1.2rem; 
+    }
+
+    .modal-body img {
+        width: 10%; 
+        height: auto; 
+    }
+}
