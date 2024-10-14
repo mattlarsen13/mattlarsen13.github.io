@@ -8,6 +8,7 @@
     --very-dark-blue: #073544d1;
     --grey: #e0dede;
     --border: #275f71d1;
+    --shadow: rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -122,44 +123,50 @@ img {
 .player-title {
     text-align: center;
 }
-.player-title h2.active {
-    font-weight: bold;
-    color: var(--very-dark-blue);
-}
-.players h2.active {
-    font-weight: bold;
-    color: var(--very-dark-blue);
-}
 .players {
     display: flex;
-    text-align: center;
-    width: 90%;
-    padding-left: 5%;
-    padding-bottom: 1.5%;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 20px 0; 
 }
-.players div {
-    margin: 0 10px; 
-    flex: 1;
-}
-.player1, .player2, .player3 {
-    padding: 10px;
-    border-radius: 5px; 
-    background-color: var(--section-color);
-}
-.player1, .player2, .player3 {
-    padding: 10px;
+
+.player-card {
+    background-color: var(--section-color); 
     border-radius: 5px;
-    background-color: var(--section-color);
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3); 
+    box-shadow: 2px 4px 10px var(--shadow);
+    margin: 10px; 
+    padding: 15px;
+    text-align: center; 
+    flex: 0 1 calc(33.33% - 20px); /* Set width to approximately 33.33% accounting for margins */
+    max-width: calc(33.33% - 20px); /* Ensure that each card does not exceed the calculated width */
+    box-sizing: border-box; 
 }
-.players a {
+
+.player-card img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.player-card h2.active {
+    font-weight: bold;
+    color: var(--very-dark-blue);
+}
+
+.player-card a {
+    display: inline-block; 
+    margin-top: 10px; 
     text-decoration: none;
     color: var(--dark-blue);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-.players a:hover {
+
+.player-card a:hover {
     color: var(--very-dark-blue);
 }
+
 
 /* Coach-Team */
 .coach-team {
@@ -316,11 +323,9 @@ button:hover {
     }
 
     /* Player-College */
-    .players {
-        flex-direction: column;
-    }
-    .players div {
-        margin: 10px 0; 
+    .player-card {
+        flex: 0 1 45%; /* Allow two cards per row on smaller screens */
+        max-width: 45%;
     }
 
     /* Coach-Team */
