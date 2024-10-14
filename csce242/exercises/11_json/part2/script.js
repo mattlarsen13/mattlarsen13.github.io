@@ -1,9 +1,6 @@
 const getBreweries = async() => {
-    const url = "https://api.openbrewerydb.org/breweries";
-
     try {
-        const response = await fetch(url);
-        return response.json();
+        return (await fetch("https://api.openbrewerydb.org/breweries")).json();
     } catch(error) {
         console.log(error);
     }
@@ -12,14 +9,14 @@ const getBreweries = async() => {
 const showBreweries = async() => {
     const breweries = await getBreweries();
 
-    breweries.forEach((brewery) => {
+    breweries.forEach((brewery)=>{
         const section = document.createElement("section");
-        section.classList.add(brewery);
-        document.getElementsById("breweries-section").append(section);
+        section.classList.add("brewery");
+        document.getElementById("breweries-section").append(section);
 
-        //create heading
+        //create the heading
         const a = document.createElement("a");
-        a.href = brewery.website.url;
+        a.href= brewery.website_url;
         section.append(a);
         const h3 = document.createElement("h3");
         h3.innerHTML = brewery.name;
@@ -29,6 +26,7 @@ const showBreweries = async() => {
         const p = document.createElement("p");
         p.innerHTML = brewery.brewery_type + " brewery";
         section.append(p);
+        
     });
 }
 
