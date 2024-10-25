@@ -1,0 +1,368 @@
+/* Structure / In all of pages */ 
+:root {
+    --black-color: #000;
+    --white-color: #fff;
+    --background-color: #3bb9dfd1;
+    --section-color: #addbebd1;
+    --dark-blue: #0d6682d1;
+    --very-dark-blue: #073544d1;
+    --grey: #e0dede;
+    --border: #275f71d1;
+    --shadow: rgba(0, 0, 0, 0.3);
+}
+
+body {
+    background: linear-gradient(to bottom, var(--background-color), var(--grey));
+    margin: 0;
+    color: var(--dark-blue);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+img {
+    border-radius: 20px;
+}
+
+.header {
+    text-align: center;
+    color: var(--very-dark-blue);
+}
+
+.navigation {
+    justify-content: center;
+    display: flex;
+    padding: 10px 0;
+}
+.navigation a {
+    text-decoration: none;
+    color: var(--dark-blue);
+    margin: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.navigation h2 {
+    margin: 0 20px;
+    padding: 0;
+}
+.navigation h2 a {
+    padding: 10px 0;
+}
+.navigation a:hover {
+    color: var(--very-dark-blue);
+}
+.navigation h2.active {
+    font-weight: bold;
+    color: var(--very-dark-blue);
+}
+
+
+.hamburger div {
+    display: none;
+    width:25px;
+    height:2px;
+    background-color:black;
+    margin:6px 0;
+    margin-left: 20px;
+}
+
+
+.border-line {
+    border: none;
+    height: 1px;  
+    background-color: var(--black-color); 
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+.footer {
+    text-align: center;
+}
+
+
+/* Home */
+.description {
+    max-width: 70%;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 1em;
+
+}
+.description h2.active {
+    font-weight: bold;
+    color: var(--very-dark-blue);
+}
+.description p {
+    font-size: large;
+}
+.images {
+    margin-top: 50px;
+    margin-left: 140px;
+}
+.slide-show {
+    border-radius: 20px;
+    width:1200px;
+    height:500px;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+}
+.slides {
+    margin-top: 10px;
+    padding-left: 450px;
+    margin-bottom: 45px;
+}
+.slide1, .slide2, .slide3 {
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+}
+
+/* Player-College */
+.player-title {
+    text-align: center;
+}
+.players {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 20px 0; 
+}
+
+.player-card {
+    background-color: var(--section-color); 
+    border-radius: 5px;
+    box-shadow: 2px 4px 10px var(--shadow);
+    margin: 10px; 
+    padding: 15px;
+    text-align: center; 
+    flex: 0 1 calc(33.33% - 20px); /* Set width to approximately 33.33% accounting for margins */
+    max-width: calc(33.33% - 20px); /* Ensure that each card does not exceed the calculated width */
+    box-sizing: border-box; 
+}
+
+.player-card img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.player-card h2.active {
+    font-weight: bold;
+    color: var(--very-dark-blue);
+}
+
+.player-card a {
+    display: inline-block; 
+    margin-top: 10px; 
+    text-decoration: none;
+    color: var(--dark-blue);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.player-card a:hover {
+    color: var(--very-dark-blue);
+}
+
+
+/* Coach-Team */
+.coach-team {
+    display: flex;
+    text-align: center;
+}
+.team h2.active {
+    font-weight: bold;
+    color: var(--very-dark-blue);
+}
+.coach h2.active {
+    font-weight: bold;
+    color: var(--very-dark-blue);
+}
+.coach div {
+    margin: 0 10px; 
+    margin-bottom: 10px;
+}
+.coach h2.active {
+    font-weight: bold;
+    color: var(--very-dark-blue);
+}
+.team h2.active {
+    font-weight: bold;
+    color: var(--very-dark-blue);
+}
+.team div {
+    margin: 0 10px;
+    margin-bottom: 10px;
+}
+.coach1, .coach2, .coach3 {
+    background-color: var(--section-color);
+    padding: 10px;
+    border-radius: 5px; 
+    max-width: 1300px;
+}
+.coach1, .coach2, .coach3 {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--section-color);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3); 
+}
+.team1, .team2, .team3 {
+    background-color: var(--section-color);
+    padding: 10px;
+    border-radius: 5px; 
+    max-width: 1300px;
+}
+.team1, .team2, .team3 {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--section-color);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+/* Add-Delete */
+.add-delete-title {
+    text-align: center;
+}
+.add-delete-title h2.active {
+    font-weight: bold;
+    color: var(--very-dark-blue);
+}
+.add-delete {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -2%;
+    text-align: center;
+}
+input[type="text"] {
+    width: 300px; 
+    height: 40px; 
+    padding: 5px; 
+    font-size: 16px; 
+    border: 2px solid var(--black-color); 
+    border-radius: 5px; 
+}
+input[type="answer"] {
+    width: 300px; 
+    height: 40px; 
+    padding: 5px; 
+    font-size: 16px; 
+    border: 2px solid var(--black-color); 
+    border-radius: 5px; 
+}
+button {
+    padding: 10px 20px; 
+    font-size: 16px;
+    color: var(--dark-blue); 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+button a {
+    color: var(--dark-blue);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    color: var(--very-dark-blue);
+}
+
+/* About-Contact */
+.about {
+    text-align: center;
+}
+.about h2.active {
+    font-weight: bold;
+    color: var(--very-dark-blue);
+}
+.contact-title {
+    text-align: center;
+}
+.contact {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 3%;
+}
+.contact h3 {
+    text-align: center;
+}
+.about p {
+    max-width: 70%;
+    text-align: center;
+    margin: 20px auto;
+    font-size: large;
+}
+.about-img {
+    border-radius: 20px;
+    max-height: 400px;
+}
+
+/* Max Width 600px */
+@media only screen and (max-width: 600px) {
+    .navigation {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom:10px;
+    }
+    
+    .navigation.active {
+        display: flex; 
+    }
+
+    /* Home */
+    .description {
+        flex-direction: column;
+        max-width: 80%;
+    }
+    .images {
+        display: none;
+    }
+
+    /* Player-College */
+    .player-card {
+        flex: 0 1 45%; /* Allow two cards per row on smaller screens */
+        max-width: 45%;
+    }
+
+    /* Coach-Team */
+    .coach-team {
+        flex-direction: column;
+    }
+
+    /* Add-Delete */
+    .add-delete {
+        flex-direction: column;
+        text-align: center;
+    }
+    .delete {
+        margin-top: 5%;
+    }
+
+
+    /* About-Contact */
+    .slide-show {
+        display: none;
+    }
+    .contact {
+        flex-direction: column;
+    }
+    .about-img {
+        max-width: 80%;
+        padding-left: 5%;
+    }
+
+
+
+    .hamburger div{
+        display: flex;
+        width:25px;
+        height:2px;
+        background-color: var(--very-dark-blue);
+        margin:6px 0;
+        margin-left: 20px;
+    }
+}
