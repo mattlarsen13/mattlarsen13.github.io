@@ -37,9 +37,68 @@
                 <h2>Contact Us!</h2>
             </div>
             <div class = "contact">
-                <h3>999-999-9999</h3>
-                <h3>matthew.larsen13@gmail.com</h3>
-                <h3>malarsen@email.sc.edu</h3>
+                <!-- Access Key 5a1c74e2-7af8-4de5-961f-c8af03a8324c -->
+                    <div class="columns">
+                      <form
+                        id="contact-form"
+                        action="https://api.web3forms.com/submit"
+                        method="POST"
+                      >
+                        <input
+                          type="hidden"
+                          name="access_key"
+                          value="5a1c74e2-7af8-4de5-961f-c8af03a8324c"
+                        />
+              
+                        <p>
+                          <label for="name">Name:</label>
+                          <input
+                            id="name"
+                            type="text"
+                            placeholder="Full Name"
+                            name="name"
+                            required
+                          />
+                        </p>
+                        <p>
+                          <label for="email">Email:</label>
+                          <input id="email" type="email" name="email" required />
+                        </p>
+                        <p>
+                          <label for="message">Message:</label>
+                          <input id="message" type="message" name="message" required />
+
+                        </p>
+                        <input
+                          type="hidden"
+                          name="redirect"
+                          value="https://web3forms.com/success"
+                        />
+                        <input
+                          type="hidden"
+                          name="subject"
+                          value="Contact for StatPad"
+                        />
+                        <input type="hidden" name="from_name" value="My Website" />
+              
+                        <p>
+                          <button type="submit">Submit Form</button>
+                        </p>
+              
+                        <p id="result"></p>
+                      </form> 
+                      <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/BJSlWxBQfwg?si=euKm6UEpaQV5tz68"
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="no-referrer" 
+                        allowfullscreen
+                        ></iframe>
+                      
+                    </div>
             </div>
             <!--Footer-->
             <hr class="border-line">

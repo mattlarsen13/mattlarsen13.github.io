@@ -282,7 +282,7 @@ button:hover {
     text-align: center;
 }
 .contact {
-    display: flex;
+    text-align: center;
     justify-content: space-around;
     padding-left: 3%;
 }
@@ -298,6 +298,36 @@ button:hover {
 .about-img {
     border-radius: 20px;
     max-height: 400px;
+}
+
+#video {
+    display: block;
+    padding: 5px;
+    max-width: 100%;
+    width: 40%;
+    margin: 0 2%;
+    
+}
+
+input[type="email"] {
+    width: 300px; 
+    height: 40px; 
+    padding: 5px; 
+    font-size: 16px; 
+    border: 2px solid var(--black-color); 
+    border-radius: 5px; 
+}
+input[type="message"] {
+    width: 300px; 
+    height: 40px; 
+    padding: 5px; 
+    font-size: 16px; 
+    border: 2px solid var(--black-color); 
+    border-radius: 5px; 
+}
+
+.contact {
+    align-content: center;
 }
 
 /* Max Width 600px */
