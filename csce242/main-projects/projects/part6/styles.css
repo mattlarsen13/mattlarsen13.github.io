@@ -62,7 +62,7 @@ img {
     display: none;
     width:25px;
     height:2px;
-    background-color:black;
+    background-color:var(--black-color);
     margin:6px 0;
     margin-left: 20px;
 }
@@ -300,14 +300,12 @@ button:hover {
     max-height: 400px;
 }
 
-#video {
-    display: block;
-    padding: 5px;
-    max-width: 100%;
-    width: 40%;
-    margin: 0 2%;
-    
+iframe {
+    width: 450px;
+    height: 225px;
+    border-radius: 5%;
 }
+
 
 input[type="email"] {
     width: 300px; 
@@ -328,6 +326,10 @@ input[type="message"] {
 
 .contact {
     align-content: center;
+}
+
+#result {
+    background-color: transparent;
 }
 
 /* Max Width 600px */
@@ -383,6 +385,12 @@ input[type="message"] {
     .about-img {
         max-width: 80%;
         padding-left: 5%;
+    }
+    #video iframe{
+        display: block;
+        padding: 5px;
+        max-width: 60%;
+
     }
 
 

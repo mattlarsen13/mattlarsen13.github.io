@@ -39,26 +39,15 @@
             <div class = "contact">
                 <!-- Access Key 5a1c74e2-7af8-4de5-961f-c8af03a8324c -->
                     <div class="columns">
-                      <form
-                        id="contact-form"
-                        action="https://api.web3forms.com/submit"
-                        method="POST"
-                      >
-                        <input
-                          type="hidden"
-                          name="access_key"
-                          value="5a1c74e2-7af8-4de5-961f-c8af03a8324c"
-                        />
+                      <form id="form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="5a1c74e2-7af8-4de5-961f-c8af03a8324c"/>
+                        <input type="hidden" name="from_name" value="Email from StatPad" />
+                        <input type="hidden" name="redirect" value="false" />
+                        <input type="hidden" name="subject" value="Message for StatPad Creator"/>
               
                         <p>
                           <label for="name">Name:</label>
-                          <input
-                            id="name"
-                            type="text"
-                            placeholder="Full Name"
-                            name="name"
-                            required
-                          />
+                          <input id="name" type="text" placeholder="Full Name" name="name" required/>
                         </p>
                         <p>
                           <label for="email">Email:</label>
@@ -67,41 +56,25 @@
                         <p>
                           <label for="message">Message:</label>
                           <input id="message" type="message" name="message" required />
-
-                        </p>
-                        <input
-                          type="hidden"
-                          name="redirect"
-                          value="https://web3forms.com/success"
-                        />
-                        <input
-                          type="hidden"
-                          name="subject"
-                          value="Contact for StatPad"
-                        />
-                        <input type="hidden" name="from_name" value="My Website" />
-              
+                        </p>              
                         <p>
                           <button type="submit">Submit Form</button>
                         </p>
-              
                         <p id="result"></p>
                       </form> 
-                      <iframe 
-                        width="560" 
-                        height="315" 
-                        src="https://www.youtube.com/embed/BJSlWxBQfwg?si=euKm6UEpaQV5tz68"
-                        title="YouTube video player" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="no-referrer" 
-                        allowfullscreen
-                        ></iframe>
-                      
+
+                      <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/c74kMCOmP80?si=tRq0iWa-ZgHvi1Zq" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
                     </div>
-            </div>
-            <!--Footer-->
-            <hr class="border-line">
+                    
+                <hr class="border-line">
             <div class = "footer">
                 <p>&copy; mattlarsen13</p>
             </div>
