@@ -301,8 +301,8 @@ button:hover {
 }
 
 iframe {
-    width: 450px;
-    height: 225px;
+    width: 600px;
+    height: 450px;
     border-radius: 5%;
 }
 
@@ -386,14 +386,6 @@ input[type="message"] {
         max-width: 80%;
         padding-left: 5%;
     }
-    #video iframe{
-        display: block;
-        padding: 5px;
-        max-width: 60%;
-
-    }
-
-
 
     .hamburger div{
         display: flex;
@@ -402,5 +394,10 @@ input[type="message"] {
         background-color: var(--very-dark-blue);
         margin:6px 0;
         margin-left: 20px;
+    }
+    iframe {
+        width: 400px;
+        height: 300px;
+        border-radius: 5%;
     }
 }
