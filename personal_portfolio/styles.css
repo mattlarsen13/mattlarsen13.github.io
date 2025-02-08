@@ -1,0 +1,288 @@
+/* Global Styling with Animations */
+:root {
+    --white: #ffffff;
+    --light-grey: #f0f0f0;
+    --medium-grey: #e0e0e0;
+    --dark-grey: #888888;
+    --accent-blue: #D9EAFD;
+    --light-white: #F8FAFC;
+    --background: #90cdee;
+    --accent-dark-blue: #74b2f9;
+}
+
+body {
+    background: linear-gradient(90deg, var(--light-white) 0%, var(--accent-blue) 5%, var(--accent-blue) 95%, var(--light-white) 100%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+    flex-wrap: wrap;
+}
+
+/* Keyframe Animations */
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Section Animations */
+#home-section {
+    animation: slideInFromLeft 1s ease-out;
+}
+
+#about-section {
+    animation: slideInFromRight 1s ease-out;
+}
+
+#portfolio-section {
+    animation: fadeIn 1.5s ease-out;
+}
+
+#contact-section {
+    animation: slideInFromLeft 1s ease-out;
+}
+
+/* Existing Nav Bar Styles */
+.nav-bar { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    margin: 0px auto; 
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+}
+.nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    list-style-type: none;
+    padding: 10px 0;
+    padding-left: 5%;
+}
+.nav-bar li a {
+    text-decoration: none;
+    color: var(--dark-grey);
+    transition: color 0.3s ease
+}
+.nav-bar li a:hover {
+    color: var(--accent-blue);
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    padding: 50px 0;
+}
+.title {
+    text-align: center;
+    margin-left: 150px;
+    margin-top: 90px;
+    font-size: 1.5em;
+    color: var(--dark-grey);
+}
+.headshot-home {
+    margin-left: 250px;
+    margin-right: 150px;
+    margin-top: 50px;
+    border-radius: 10%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* About Section */
+.about {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 50px;
+    border-radius: 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+    box-shadow: var(--shadow);
+    animation: slideInFromRight 1s ease-out;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 30px; /* Space between image and text */
+    align-items: center; /* Center-align content */
+    text-align: center; /* Center-align text */
+
+
+}
+
+.about-image {
+    flex: 0 0 400px;
+    height: 400px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+
+    
+}
+
+
+
+.about-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.about p {
+    font-size: 1.2em;
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+    max-width: 500px;
+}
+
+
+/* Portfolio Section - Existing styles remain the same as in previous artifact */
+.portfolio a {
+    text-decoration: none;
+}
+
+.portfolio-title h2 {
+    margin-bottom: 15px;
+    color: var(--black);
+    font-size: 2em;
+    text-align: center;
+}
+.portfolio-title a {
+    text-decoration: none;
+    font-size: 1em;
+    color: var(--black);
+    text-align: center;
+    align-items: center;
+    display:block;
+    margin-bottom: 15px;
+}
+.project a:hover {
+    background-color: darken(var(--sample), 10%);
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    width: 300px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    align-items: center;
+    text-align: center;
+
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project h3 {
+    padding: 15px 15px 0;
+    margin: 0;
+    color: var(--black);
+}
+
+.project p {
+    padding: 10px 15px;
+    font-size: 0.9em;
+    color: #333;
+    text-align: center;
+}
+
+.project a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: var(--accent-blue);
+    color: var(--dark-grey);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.project a:hover {
+    background-color: darken(var(--accent-dark-blue), 10%);
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 15px;
+    background: rgba(110, 202, 255, 0.7);
+    margin: 20px auto;
+    border-radius: 15px;
+
+    max-width: 300px;
+    align-items: center;
+    justify-content: center;
+}
+.contact a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+.contact a:hover {
+    color: darken(var(--accent-blue), 10%);
+}
+
+/* Apply to 600px and larger */
+@media only screen and (min-width: 600px) {
+    
+}
