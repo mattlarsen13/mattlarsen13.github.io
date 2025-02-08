@@ -148,10 +148,15 @@ body {
     object-fit: cover;
     box-shadow: var(--shadow);
     transition: var(--transition);
-
-    
 }
 
+.theta-tau {
+    max-width: 100%;  /* Makes the image scale with its container */
+    height: auto;     /* Maintains aspect ratio */
+    display: block;   /* Prevents inline spacing issues */
+    margin: 0 auto;   /* Centers the image */
+    border-radius: 10px; /* Optional: adds rounded corners */
+}
 
 
 .about-image:hover {
